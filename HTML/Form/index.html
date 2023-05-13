@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--defines the action when submit button is clicked .
+        you add a file path in this action this file contains the server sidecode(backend code) which 
+    handles your code-->
+    <form action="" method="post">
+        <div>
+            <label for="name">Name:</label><br>
+            <input type="text" fname="Name"  value="Ash" placeholder="enter your name" required><!--by default values we can add
+            in all the input except password-->
+        </div>
+        <div>
+            <label for="event">Event Name:</label><br>
+            <input  type="event" Name="eveName" id="eveName"  value="js event" readonly>
+        <!--id name should be same as the name attribute-->
+        </div>
+        
+        <div>
+            <label for="age">Age:</label><br>
+            <input type = "Number" name="Age" value="27">
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type = "Email" name="Email" value="Ashu@gmail.com">
+        </div>
+        <div>
+            <label for="password">Create a password:</label><br>
+            <input type="password">
+        </div>
+        <div>
+            <label for="phoneno">Cantact Number:</label><br>
+            <input type="tel">
+        </div>
+        <div>
+            <label for="gender">Genger:</label><br><!--values are imp for botton 
+            and checkbox rather name and all the values-->
+            <input type = "radio" Name="gender" value="Male">Male<br>
+            <input type="radio" Name="gender" value="Female">Female<br>
+        </div>
+        <div>
+            <br>
+            <label for="skills">Your Skills</label><br>
+            HTML:<input type = "checkbox">
+            CSS:<input type = "checkbox">
+            JS:<input type = "checkbox">
+        </div>
+        <div>
+            <label for="time">Time to meetup</label>
+            <input type = "datetime-local">
+        </div>
+        <div>
+            <label for="topics">Topics to be discussed:</label>
+            <select name="Topics">
+            <option value="Html-tags">Html-tags</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JavaScript</option>
+        </select>
+        </div>
+        <div>
+            <label for="qtns">Any Questions?</label>
+            <textarea name="msg" id="msg" col="30" row="2"></textarea>
+        </div>
+        <div>
+            <input type="Submit">
+            <input type="Reset" disabled><!--to disable any atribute-->
+        </div>
+        <div>
+            <label for="extra input types">Extra input types</label>
+            <input type="color"><br>
+            <input type="date"><br>
+            <input type="month"><br>
+            <input type="week"><br>
+            <input type="file"><br>
+            <input type="url"><br>
+            <input type="range"><br>
+            <input type="hidden"><br>
+        </div>
+    </form>
+</body>
+</html>
