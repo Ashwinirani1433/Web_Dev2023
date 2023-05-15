@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+</head>
+
+<body>
+    <h1>Flipcart vendor form</h1>
+    <label for="name">Name:</label><br>
+    <input type="text" name="name" id="name" placeholder="fname">
+    <input type="text" name="name" id="name" placeholder="sname"><br>
+
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" name="dob" id="dob"><br>
+
+    <label for="location">current location:</label><br>
+    <textarea name="location" cols="30" rows="3">location</textarea><br>
+
+    <label for="email">Enter your email</label><br>
+    <input type="email" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"><br>
+
+    <label for="aadhar">Upload your aadhar card:</label><br>
+    <input type="file" name="aadhar" id="aadhar" maxlength="12"><br>
+
+    <label for="pan">Enter your PAN Number</label><br>
+    <input type="tel" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"><br>
+
+    <label for="Items">Items to sale:</label>
+    <select name="items" id="Items">
+       <option value="Items to sell" disabled>Items to sell</option>
+       <option value="shoes">shoes</option>
+       <option value="clothes">clothes</option>
+       <option value="bags">bags</option>
+    </select><br>
+
+    <label for="question">Are you in india?</label><br>
+    <input type="radio" name="question">yes<br>
+    <input type="radio" name="question">no<br>
+
+    <label for="delivery">location open for delivery</label>
+    Bangalore:<input type="checkbox" name="delivery">
+    Delhi:<input type="checkbox" name="delivery">
+    Mumbai:<input type="checkbox" name="delivery"><br>
+
+    <input type="submit"><br>
+    <input type="reset">
+
+
+</body>
+</html>
