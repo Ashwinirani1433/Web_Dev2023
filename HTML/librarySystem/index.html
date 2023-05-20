@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="library">
+            <ul>
+               <li><a href="#">Books</a></li>
+               <li><a href="#">Register</a></li>
+             </ul>
+            </nav><br>
+        
+        <div>
+          <h1>Books</h1>
+          <table border="1px" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <table style="border-collapse: collapse;">
+                            <tr>
+                            <th>Publication Date: </th>
+                            <td>23-08-2020</td>
+                            </tr>
+                            <tr>
+                                <th>Page Count: </th>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN: </th>
+                                <td>3</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Ashwini</td>
+                    <td>Programming Language</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <table style="border-collapse: collapse;">
+                            <tr>
+                            <th>Publication Date: </th>
+                            <td>20-08-2020</td>
+                            </tr>
+                            <tr>
+                                <th>Page Count: </th>
+                                <td>230</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN: </th>
+                                <td>13</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Shanmukha</td>
+                    <td>Love Birds</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <table style="border-collapse: collapse;">
+                            <tr>
+                            <th>Publication Date: </th>
+                            <td>20-08-2021</td>
+                            </tr>
+                            <tr>
+                                <th>Page Count: </th>
+                                <td>130</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN: </th>
+                                <td>15</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Aarush</td>
+                    <td>Kids Activities</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <table style="border-collapse: collapse;">
+                            <tr>
+                            <th>Publication Date: </th>
+                            <td>20-08-1999</td>
+                            </tr>
+                            <tr>
+                                <th>Page Count: </th>
+                                <td>650</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN: </th>
+                                <td>19</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Dhanraj</td>
+                    <td>Life Story</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <table style="border-collapse: collapse;">
+                            <tr>
+                            <th>Publication Date: </th>
+                            <td>20-08-2023</td>
+                            </tr>
+                            <tr>
+                                <th>Page Count: </th>
+                                <td>520</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN: </th>
+                                <td>20</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Ranjan</td>
+                    <td>3 rules of life</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+          </table><br>
+        </div>
+
+        <div>
+            <h1>Register</h1>
+            <form action="post">
+                <label for="name">First Name</label><br>
+                <input type="text" id="name" required><br>
+
+                <label for="name">Last Name</label><br>
+                <input type="text" id="name" required><br>
+
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" id="dob" required><br>
+
+                <label for="age">Age</label><br>
+                <input type="number" id="age" required><br>
+
+                <label for="email">Email</label><br>
+                <input type="text" id="name" regex="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" required><br>
+                 
+                 <label for="password">Password</label><br>
+                 <input type="password" id="password" regex="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"" required><br>
+
+                 <label for="password">Confirm Password</label><br>
+                 <input type="password" id="password" regex="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"" required>
+                   <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+</body>
+</html>
